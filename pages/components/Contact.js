@@ -16,6 +16,7 @@ export default function Contact() {
             data-netlify="true"
             className=" relative z-20 flex flex-col py-6 space-y-6 md:py-2 md:px-6 ng-untouched ng-pristine ng-valid  radius-xl"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <h3>
               I'm currently seeking freelance opportunities as well as a
               full-time developer position. Please feel free to get in touch or
@@ -48,7 +49,7 @@ export default function Contact() {
               ></textarea>
             </label>
             <button
-              type="button"
+              type="submit"
               className="font-sans self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-water text-gray-50 focus:ring-pond hover:ring-water"
             >
               Submit
