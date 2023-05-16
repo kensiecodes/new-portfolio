@@ -23,7 +23,7 @@ export default function Hero() {
             <img src="/butterfly.png" className=" w-[75px] max-lg:hidden"></img>
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="https://kensie.codes/"
               className="font-sans px-8 py-3 text-lg font-semibold rounded bg-water text-sugar"
             >
               My Blog
@@ -31,7 +31,7 @@ export default function Hero() {
             <img src="/butterfly.png" className="max-sm:hidden lg:hidden"></img>
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="https://github.com/kensiecodes"
               className="font-sans px-8 py-3 text-lg font-semibold border rounded border-gray-800"
             >
               My Work
