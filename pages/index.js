@@ -7,7 +7,7 @@ import Gallery from "./components/Gallery";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth">
+    <div >
       <Hero />
       <div className="gradient">
         <div className="flex max-xl:hidden lg:w-1/3 m-auto absolute xl:mt-[-200px] lg:ml-[-30px]">

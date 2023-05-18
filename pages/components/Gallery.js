@@ -56,14 +56,22 @@ export default function Gallery() {
             <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
               API, JS, Tailwind
             </span>
-            <h2 className="hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              Hyrule Compendium
+            <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
+              <a href="https://github.com/kensiecodes/botwcompendium">
+                Hyrule Compendium
+              </a>
             </h2>
           </div>
           <p className="dark:text-gray-100">
             This is a Breath of the Wild game guide using a great API. It's
             fully responsive, a simple server with pure Javascript, and Tailwind
-            for the styling.
+            for the styling.{" "}
+            <a
+              className="text-cloud hover:text-turmeric"
+              href="https://github.com/kensiecodes/botwcompendium"
+            >
+              Codebase here.
+            </a>
           </p>
         </div>
 
@@ -77,13 +85,19 @@ export default function Gallery() {
             <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
               Art & Design, Next.js, React
             </span>
-            <h2 className="hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              My Portfolio Site
+            <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
+              <a href="#"> My Portfolio Site</a>
             </h2>
           </div>
           <p className="dark:text-gray-100">
             Hey, you're already here. This site is meant to show a little of my
-            personality on top of my capability and front end tech stack.{" "}
+            personality on top of my capability and front-end tech stack.{" "}
+            <a
+              className="text-cloud hover:text-turmeric"
+              href="https://github.com/kensiecodes/new-portfolio"
+            >
+              Codebase here.
+            </a>
           </p>
         </div>
 
@@ -97,14 +111,20 @@ export default function Gallery() {
             <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
               Next.js, React, JSX
             </span>
-            <h2 className="hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              Awaken Hair
+            <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
+              <a href="https://awakenhair.netlify.app/">Awaken Hair</a>
             </h2>
           </div>
           <p className="dark:text-gray-100">
             A concept for a natural haircare brand made with MambaUI and using
             Material design principals. I built this for a tutorial article I
             wrote on my blog for #communitytaught.
+            <a
+              className="text-cloud hover:text-turmeric"
+              href="https://github.com/kensiecodes/awakenhair"
+            >
+              &nbsp;Codebase here.
+            </a>
           </p>
         </div>
       </Carousel>
