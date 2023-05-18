@@ -20,24 +20,6 @@ const responsive = {
   },
 };
 
-const CustomLeftArrow = ({ onClick, ...rest }) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType },
-  } = rest;
-  // onMove means if dragging or swiping in progress.
-  return <button onClick={() => onClick()} />;
-};
-
-const CustomRightArrow = ({ onClick, ...rest }) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType },
-  } = rest;
-  // onMove means if dragging or swiping in progress.
-  return <button onClick={() => onClick()} />;
-};
-
 export default function Gallery() {
   return (
     <div>
@@ -57,7 +39,7 @@ export default function Gallery() {
               API, JS, Tailwind
             </span>
             <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              <a href="https://github.com/kensiecodes/botwcompendium">
+              <a href="https://zeldacompanion.netlify.app/">
                 Hyrule Compendium
               </a>
             </h2>
@@ -122,6 +104,33 @@ export default function Gallery() {
             <a
               className="text-cloud hover:text-turmeric"
               href="https://github.com/kensiecodes/awakenhair"
+            >
+              &nbsp;Codebase here.
+            </a>
+          </p>
+        </div>
+
+        <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
+          <img
+            src="/fairfield.png"
+            alt=""
+            className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+          />
+          <div className="mt-6 mb-2">
+            <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
+              Next.js, React, JSX
+            </span>
+            <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
+              <a href="https://fairfieldfarms.netlify.app/">Fairfield Farms</a>
+            </h2>
+          </div>
+          <p className="dark:text-gray-100">
+            A multi-page concept for a farm website complete with copy, pricing,
+            & navigation. Made using several component libraries, Next.js
+            routing, and an organized React system.
+            <a
+              className="text-cloud hover:text-turmeric"
+              href="https://github.com/kensiecodes/fairfieldfarm"
             >
               &nbsp;Codebase here.
             </a>
