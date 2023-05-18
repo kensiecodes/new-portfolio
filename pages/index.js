@@ -3,10 +3,11 @@ import Article from "./components/Article";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Feature from "./components/Feature";
+import Gallery from "./components/Gallery";
 
 export default function Home() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Hero />
       <div className="gradient">
         <div className="flex max-xl:hidden lg:w-1/3 m-auto absolute xl:mt-[-200px] lg:ml-[-30px]">
@@ -17,6 +18,7 @@ export default function Home() {
             <img src="/github.png" className=""></img>
           </a>
         </div>
+        <Gallery />
         <Contact />
 
         <Article />

@@ -1,7 +1,7 @@
 export default function Article() {
   return (
     <div className="p-5 mx-auto sm:p-10 md:p-16 text-mud">
-      <h1 className="pb-6 text-4xl text-center text-mud font-sans">Writing</h1>
+      <h1 className="pb-6 text-4xl text-center text-mud font-sans"></h1>
       <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
         <img
           src="/article.jpeg"

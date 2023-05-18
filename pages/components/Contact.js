@@ -1,15 +1,53 @@
+let text = "kensiejack1@gmail.com";
+let copied = false;
+// const copyContent = async () => {
+//   try {
+//     await navigator.clipboard.writeText(text);
+//     console.log("Content copied to clipboard");
+//     document.getElementById("copied").innerText = `Email copied to clipboard`;
+//     setTimeout(() => {
+
+//       document.getElementById("copied").innerText = "";
+//     }, 2000);
+//   } catch (err) {
+//     console.error("Failed to copy: ", err);
+//   }
+// };
+
 export default function Contact() {
   return (
     <section className="py-6 text-mud ">
-      <h1 className="pb-6 text-4xl text-center text-cinnamon font-sans">
-        Contact
-      </h1>
-      <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2">
+      <h1 className="pb-6 text-4xl text-center text-cinnamon font-sans"></h1>
+      <div className="grid max-w-6xl px-6 mx-auto lg:px-8 ">
         <div className="py-6 md:py-0 md:px-6">
-          <img src="/frog.png" className="relative z-20"></img>
+          <img
+            src="/frog.png"
+            className=" w-full sm:w-2/3 lg:w-1/2 m-auto"
+          ></img>
         </div>
+
         <div className="">
-          <form
+          <p className="font-sans w-1/2 text-center m-auto">
+            I'm currently open for freelance and full-time engineering
+            positions. Please get in touch if you have interest in what I can
+            offer to your project or team!
+          </p>
+          <div className="w-36 text-center mt-10 font-sans border  hover:text-cinnamon hover:bg-sugar transition  ease-in-out duration-200 px-8 py-3 text-sugar border-cinnamon bg-cinnamon m-auto rounded-md">
+            <form className="" action="mailto:kensiejack1@gmail.com">
+              <input type="submit" value="Email Me" />
+            </form>
+          </div>
+        </div>
+
+        {/* <button
+            id="clipboard"
+            className="cursor-context-menu text-xl bg-cloud p-3 font-sans rounded-md border-cinnamon border-2 border-dotted hover:border-dashed transition  ease-in-out bg-blush"
+            onClick={copyContent}
+          >
+            kensiejack1@gmail.com
+          </button>
+          <p className="" id="copied"></p> */}
+        {/* <form
             novalidate=""
             name="contact"
             method="POST"
@@ -54,8 +92,7 @@ export default function Contact() {
             >
               Submit
             </button>
-          </form>
-        </div>
+          </form> */}
       </div>
     </section>
   );

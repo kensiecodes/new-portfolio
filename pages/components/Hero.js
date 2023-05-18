@@ -13,6 +13,14 @@ export default function Hero() {
             I'm a full-stack developer based in upstate New York. I like
             problem-solving, beautiful design, and efficient code. I'm also a
             mother, artist, seamstress, gamer, gardener, and obsessive learner.
+            You can learn more about me&nbsp;
+            <a
+              className="font-bold underline hover:no-underline hover:text-turmeric transition-colors duration-150 ease-in-out"
+              href="https://kensie.codes/becoming-a-swe-0-how-i-got-here"
+            >
+              here
+            </a>
+            .
           </p>
 
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-end">
@@ -24,15 +32,14 @@ export default function Hero() {
             <a
               rel="noopener noreferrer"
               href="https://kensie.codes/"
-              className="font-sans px-8 py-3 text-lg font-semibold rounded bg-water text-sugar"
+              className="border border-water hover:text-water hover:bg-cloud border font-sans px-8 py-3 text-lg font-semibold rounded bg-water text-cloud"
             >
               My Blog
             </a>
             <img src="/butterfly.png" className="max-sm:hidden lg:hidden"></img>
             <a
-              rel="noopener noreferrer"
-              href="https://github.com/kensiecodes"
-              className="font-sans px-8 py-3 text-lg font-semibold border rounded border-gray-800"
+              href="#work"
+              className="hover:bg-water hover:text-cloud transition duration-150 ease-in-out font-sans px-8 py-3 text-lg bg-cloud text-water font-semibold border rounded border-water"
             >
               My Work
             </a>
