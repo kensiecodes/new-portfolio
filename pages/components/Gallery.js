@@ -20,6 +20,39 @@ const responsive = {
   },
 };
 
+function GalleryCard(
+  imgSrc,
+  technologies,
+  siteLink,
+  title,
+  description,
+  ghLink
+) {
+  return (
+    <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
+      <img
+        src={imgSrc}
+        alt=""
+        className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
+      />
+      <div className="mt-6 mb-2">
+        <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
+          {technologies}
+        </span>
+        <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
+          <a href={siteLink}>{title}</a>
+        </h2>
+      </div>
+      <p className="dark:text-gray-100">
+        {description}
+        <a className="text-cloud hover:text-turmeric" href={ghLink}>
+          Codebase here.
+        </a>
+      </p>
+    </div>
+  );
+}
+
 export default function Gallery() {
   return (
     <div>
@@ -28,6 +61,16 @@ export default function Gallery() {
         className="py-6 text-4xl text-center text-water font-sans"
       ></h1>
       <Carousel className="mt-10" responsive={responsive}>
+        <GalleryCard
+          imgSrc="/zelda.png"
+          technologies="API, JS, Tailwind"
+          siteLink="https://zeldacompanion.netlify.app/"
+          title="Hyrule Compendium"
+          description="This is a Breath of the Wild game guide using a great API. It's fully
+          responsive, a simple server with pure Javascript, and Tailwind for the
+          styling."
+          ghLink="https://github.com/kensiecodes/botwcompendium"
+        />
         <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
           <img
             src="/zelda.png"
