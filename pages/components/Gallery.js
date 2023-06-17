@@ -20,14 +20,14 @@ const responsive = {
   },
 };
 
-function GalleryCard(
+function GalleryCard({
   imgSrc,
   technologies,
   siteLink,
   title,
   description,
-  ghLink
-) {
+  ghLink,
+}) {
   return (
     <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
       <img
@@ -44,7 +44,7 @@ function GalleryCard(
         </h2>
       </div>
       <p className="dark:text-gray-100">
-        {description}
+        {description}{" "}
         <a className="text-cloud hover:text-turmeric" href={ghLink}>
           Codebase here.
         </a>
@@ -62,6 +62,14 @@ export default function Gallery() {
       ></h1>
       <Carousel className="mt-10" responsive={responsive}>
         <GalleryCard
+          imgSrc="/secondhand.png"
+          technologies="Express, MongoDB, Next.js, Tailwind, React"
+          siteLink=""
+          title="Secondhand"
+          description="A web app utilizing the MERN stack (currently converting to Next 13). An image and social board for posting and getting free stuff. Features profiles, comments, messages, follows, editing and deleting posts. "
+          ghLink="https://github.com/kensiecodes"
+        />
+        <GalleryCard
           imgSrc="/zelda.png"
           technologies="API, JS, Tailwind"
           siteLink="https://zeldacompanion.netlify.app/"
@@ -71,100 +79,46 @@ export default function Gallery() {
           styling."
           ghLink="https://github.com/kensiecodes/botwcompendium"
         />
-        <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
-          <img
-            src="/zelda.png"
-            alt=""
-            className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-          />
-          <div className="mt-6 mb-2">
-            <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-              API, JS, Tailwind
-            </span>
-            <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              <a href="https://zeldacompanion.netlify.app/">
-                Hyrule Compendium
-              </a>
-            </h2>
-          </div>
-          <p className="dark:text-gray-100">
-            This is a Breath of the Wild game guide using a great API. It's
-            fully responsive, a simple server with pure Javascript, and Tailwind
-            for the styling.{" "}
-            <a
-              className="text-cloud hover:text-turmeric"
-              href="https://github.com/kensiecodes/botwcompendium"
-            >
-              Codebase here.
-            </a>
-          </p>
-        </div>
+        <GalleryCard
+          imgSrc="/portfoliotop.png"
+          technologies="Art & Design, Next.js, React"
+          siteLink="/"
+          title="Portfolio Site"
+          description="Hey, you're already here. This site is meant to show a little of my
+          personality on top of my capability and front-end tech stack."
+          ghLink="https://github.com/kensiecodes/new-portfolio"
+        />
+        <GalleryCard
+          imgSrc="/awakenhair.jpeg"
+          technologies="Next.js, React, JSX"
+          siteLink="https://awakenhair.netlify.app/"
+          title="Awaken Hair"
+          description="A concept for a natural haircare brand made with MambaUI and using
+          Material design principals. I built this for a tutorial article I
+          wrote on my blog for #communitytaught."
+          ghLink="https://github.com/kensiecodes/awakenhair"
+        />
+        <GalleryCard
+          imgSrc="/fairfield.png"
+          technologies="Next.js, React, JSX"
+          siteLink="https://fairfieldfarms.netlify.app/"
+          title="Fairfield Farms"
+          description="A concept for a natural haircare brand made with MambaUI and using
+          Material design principals. I built this for a tutorial article I
+          wrote on my blog for #communitytaught."
+          ghLink="https://github.com/kensiecodes/awakenhair"
+        />
 
         <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
           <img
-            src="/portfoliotop.png"
+            src=""
             alt=""
             className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
           />
           <div className="mt-6 mb-2">
-            <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-              Art & Design, Next.js, React
-            </span>
+            <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400"></span>
             <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              <a href="#"> My Portfolio Site</a>
-            </h2>
-          </div>
-          <p className="dark:text-gray-100">
-            Hey, you're already here. This site is meant to show a little of my
-            personality on top of my capability and front-end tech stack.{" "}
-            <a
-              className="text-cloud hover:text-turmeric"
-              href="https://github.com/kensiecodes/new-portfolio"
-            >
-              Codebase here.
-            </a>
-          </p>
-        </div>
-
-        <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
-          <img
-            src="/awakenhair.jpeg"
-            alt=""
-            className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-          />
-          <div className="mt-6 mb-2">
-            <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-              Next.js, React, JSX
-            </span>
-            <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              <a href="https://awakenhair.netlify.app/">Awaken Hair</a>
-            </h2>
-          </div>
-          <p className="dark:text-gray-100">
-            A concept for a natural haircare brand made with MambaUI and using
-            Material design principals. I built this for a tutorial article I
-            wrote on my blog for #communitytaught.
-            <a
-              className="text-cloud hover:text-turmeric"
-              href="https://github.com/kensiecodes/awakenhair"
-            >
-              &nbsp;Codebase here.
-            </a>
-          </p>
-        </div>
-
-        <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
-          <img
-            src="/fairfield.png"
-            alt=""
-            className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
-          />
-          <div className="mt-6 mb-2">
-            <span className=" block text-xs font-medium tracking-widest uppercase dark:text-violet-400">
-              Next.js, React, JSX
-            </span>
-            <h2 className="underline hover:text-turmeric transition-color duration-150 ease-in-out font-sans text-xl font-semibold tracking-wide">
-              <a href="https://fairfieldfarms.netlify.app/">Fairfield Farms</a>
+              <a href=""></a>
             </h2>
           </div>
           <p className="dark:text-gray-100">

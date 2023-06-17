@@ -33,7 +33,7 @@ export default function Contact() {
             offer to your project or team!
           </p>
           <div className="w-36 text-center mt-10 font-sans border  hover:text-cinnamon hover:bg-sugar transition  ease-in-out duration-200 px-8 py-3 text-sugar border-cinnamon bg-cinnamon m-auto rounded-md">
-            <form className="" action="mailto:kensiejack1@gmail.com">
+            <form className="" action="https://mailto:kensiejack1@gmail.com">
               <input type="submit" value="Email Me" />
             </form>
           </div>
