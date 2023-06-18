@@ -32,10 +32,17 @@ export default function Contact() {
             positions. Please get in touch if you have interest in what I can
             offer to your project or team!
           </p>
-          <div className="w-36 text-center mt-10 font-sans border  hover:text-cinnamon hover:bg-sugar transition  ease-in-out duration-200 px-8 py-3 text-sugar border-cinnamon bg-cinnamon m-auto rounded-md">
-            <form className="" action="https://mailto:kensiejack1@gmail.com">
-              <input type="submit" value="Email Me" />
-            </form>
+          <div className="flex justify-center items-center w-1/2 m-auto ">
+            <div className="m-1 w-36 text-center mt-10 font-sans border  hover:text-cinnamon hover:bg-sugar transition  ease-in-out duration-200 px-8 py-3 text-sugar border-cinnamon bg-cinnamon m-auto rounded-md">
+              <form className="" action="https://mailto:kensiejack1@gmail.com">
+                <input type="submit" value="Email Me" />
+              </form>
+            </div>
+            <div className="m-1 w-36 text-center mt-10 font-sans border  hover:text-cinnamon hover:bg-sugar transition  ease-in-out duration-200 px-8 py-3 text-sugar border-cinnamon bg-cinnamon m-auto rounded-md">
+              <a href="/Mackensie-Jack-Resume-portfolio.docx.pdf" download>
+                <input type="submit" value="Resume" />
+              </a>
+            </div>
           </div>
         </div>
 
