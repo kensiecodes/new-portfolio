@@ -34,7 +34,7 @@ export default function Contact() {
           </p>
           <div className="flex justify-center items-center w-1/2 m-auto ">
             <div className="m-1 w-36 text-center mt-10 font-sans border  hover:text-cinnamon hover:bg-sugar transition  ease-in-out duration-200 px-8 py-3 text-sugar border-cinnamon bg-cinnamon m-auto rounded-md">
-              <form className="" action="https://mailto:kensiejack1@gmail.com">
+              <form className="" action="mailto:kensiejack1@gmail.com">
                 <input type="submit" value="Email Me" />
               </form>
             </div>
