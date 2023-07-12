@@ -20,7 +20,6 @@ export default function Home() {
         </div>
         <Gallery />
         <Contact />
-
         <Article />
         <img
           src="/mermaid.png"

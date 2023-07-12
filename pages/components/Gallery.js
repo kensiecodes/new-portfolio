@@ -60,7 +60,16 @@ export default function Gallery() {
         id="work"
         className="py-6 text-4xl text-center text-water font-sans"
       ></h1>
+
       <Carousel className="mt-10" responsive={responsive}>
+        <GalleryCard
+          imgSrc="/colorpalette.png"
+          technologies="Next.js, React, Tailwind"
+          siteLink="https://frontendnest.netlify.app/"
+          title="Frontend Nest"
+          description="Nest is a one-stop suite for config files, palettes, components, and a configurable cheatsheets for common frontend packages and tools."
+          ghLink="https://github.com/kensiecodes/tailwindnest"
+        />
         <GalleryCard
           imgSrc="/secondhand.png"
           technologies="Express, MongoDB, Next.js, Tailwind, React"
