@@ -29,7 +29,7 @@ function GalleryCard({
   ghLink,
 }) {
   return (
-    <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-pond dark:text-gray-50">
+    <div className="m-auto max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 text-mud">
       <img
         src={imgSrc}
         alt=""
@@ -43,7 +43,7 @@ function GalleryCard({
           <a href={siteLink}>{title}</a>
         </h2>
       </div>
-      <p className="dark:text-gray-100">
+      <p className="dark:text-mud">
         {description}{" "}
         <a className="text-cloud hover:text-turmeric" href={ghLink}>
           Codebase here.
